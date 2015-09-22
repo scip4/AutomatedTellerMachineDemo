@@ -1,0 +1,12 @@
+@{
+
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"].</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+@Html.ActionLink("Register", "Register", "Account", null, new {@class="btn btn-default"})
+<br><br>
+@Html.ActionLink("Home", "Index", "Home");
+@Html.Partial("_LoginPartial")
